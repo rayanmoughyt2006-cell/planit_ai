@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html land="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="veiwport" content="width=device-width, intial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="style.css">
+		<title> Planit AI </title>
+		<script type="module"  src="./js/main.js" defer></script>	
+	</head>
+<body class="p-0 m-0    ">
+    <header>
+			<nav id="navbar" class="h-[17vh] w-100% flex justify-between items-center bg-cyan-400">
+				<a href="index.html"><img src="./img/logo.png" alt="logo de palnit ai" class="h-[70px] p-[7px] translate-x-[6%]"></a>
+				<ul id="ul-nav" class="flex items-center text-blue-700 gap-[30px] p-[20px] font-display font-extrabold text-2xl">
+					<li><a href="index.html"> Dashboard     </a></li>
+					<li><a href="new-project.html">  + Nouveau Projet </a></li>
+					<li><button id="openAI" class="text-xl bg-blue-700 text-white p-[15px] rounded-[6px]"> Paramètres IA </button></li>
+				</ul>
+			</nav>
+	</header>
+    <main class="bg-cyan-100">
+        <section class="p-[100px] flex flex-col justify-center h-[85vm]" >
+            <div class="bg-white shadow-lg shadow-white-900/50 rounded-[12px]">
+                <div class=" w-[1000px] p-[30px]">
+                    <div class="flex flex-col justify-center gap-[5px]">
+                        <h1 class="font-display font-extrabold text-5xl "> Creer un nouveau Projet </h1>
+                        <p class="text-xl"> Decrivez Votre projet pour generet un plan de Developpementrealiste .</p>
+                    </div>
+                </div>
+                 <div class="flex flex-col gap-[25px] p-[50px] rounded-[4px]">
+                            <div class="flex justify-between">
+                                <div class="flex flex-col">
+                                    <label for="nomprojet" class="font-extrabold font-display"> Nom du projet </label>
+                                    <input type="text" name="nom de projet" id="nomprojet" placeholder="Ex.Application de reservation" class="border-[2px] border-blue-700   h-[40px] w-[250px] rounded-[4px]">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label for="duree" class="font-extrabold font-display"> Duree </label>
+                                    <input type="number" id="duree" placeholder="001" class="border-[2px] border-blue-700 h-[40px] w-[250px] rounded-[4px]">
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-col">
+                                <label for="descrip" class="font-extrabold font-display">Description</label>
+                                <input type="text" name="Description" id="descrip" placeholder="Decrivez votre Description" class="w-full h-[50px] border-[2px] border-blue-700 rounded-[4px]">
+                            </div> 
+                            <div class="flex flex-col font-extrabold font-display">
+                                <label for="textbreif" class="font-extrabold font-display">Breif complet</label>
+                                <textarea name="breif" id="textbreif" placeholder="Decrievez les objectifs, les utilisateurs cjles, les fonctionnalites cles et les constaints..." class="w-full h-[140px] rounded-[4px] border-[2px] border-blue-700 "></textarea>
+                            </div>
+                            <div class="flex justify-between">
+                                <select name="select" id="select" class="h-[60px] w-[350px] rounded-[6px] bg-white border-[2px] border-blue-700 shadow-lg shadow-blue-700/50 font-extrabold font-display">
+                                    <option value=""> Nomber de développeur </option>
+                                    <option value="1"> 1 développeur</option>
+                                    <option value="2"> 2 développeur</option>
+                                    <option value="3"> 3 développeur</option>
+                                    <option value="4"> 4 développeur</option>
+                                    <option value="5"> 5 développeur</option>
+                                </select>
+                                <button  type="submit" id="devet" class="bg-blue-700 shadow-lg shadow-blue-700/50 h-[60px] w-[140px] text-white rounded-[6px] font-extrabold font-display"> Devet projet</button>
+                            </div>
+                </div>
+                <dialog id="popup">
+				<p class="text-2xl translate-y-[-40%]"> Votre API Key </p>
+				<input type="password" name="AI.url" id="inp-api" placeholder="  API key" class="border-blue-700 border-[2px] rounded-[6px] h-[40px] focus:outline-none">
+				<button type="submit" id="closeAI" class="bg-blue-500 h-[50px] w-[150px] translate-y-[40%] text-white rounded-[8px]">submit</button>
+			</dialog>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

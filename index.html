@@ -8,7 +8,7 @@
 		<title> Planit AI </title>
 		<script type="module"  src="./js/main.js" defer></script>	
 	</head>
-	<body>
+	<body class="bg-cyan-100">
 		<header>
 			<nav id="navbar" class="h-[17vh] flex justify-between items-center bg-cyan-300">
 				<a href="index.html"><img src="./img/logo.png" alt="logo de palnit ai" class="h-[70px] p-[7px] translate-x-[6%]"></a>
@@ -19,7 +19,7 @@
 				</ul>
 			</nav>
 		</header>
-		<main class="h-[85vh]">
+		<main >
 			<div id="introduction" class="flex justify-between items-center translate-y-[50%] p-[30px]">
 				<div class="">
 					<h1 class="font-display font-extrabold text-3xl">Mes Projets</h1>
@@ -27,15 +27,14 @@
 				</div>
 				<a href=""><button class="bg-blue-700 shadow-lg shadow-blue-500/50 text-white h-[60px] w-[200px] rounded-[5px] font-extrabold font-display"> + Nouveuo Projet</button></a>
 			</div>
-			<div class="grid grid-cols-[1fr_1fr_1fr] place-items-center translate-y-[15%] gap-[30px] mx-[40px] ">
-				<div class="h-[350px] w-[400px] border-[2px] rounded-[6px] border-blue-500 bg-red-700">
-					<div class="flex place-items-start">
-						test
+			<div class="grid grid-cols-[1fr_1fr_1fr] place-items-center translate-y-[15%] gap-[30px] mx-[40px]">
+				<div class="flex flex-col justify-between p-[20px] h-[350px] w-[400px] bg-white  rounded-[6px]  shadow-lg shadow-white-900/30">
+					<div>
+						<p id="dachdescription" class="font-display font-extrabold"></p>
 					</div>
-					<div>test</div>
 					<div class=" flex justify-between place-items-end">
-						<button id="btndelet" class="	">supprime</button>
-						<button id="btnouvrir" class="bg-blue-700 border-[2px] shadow-lg shadow-blue-500/50"> ouvrir </button>
+						<button id="btndelet" class="h-[40px] w-[120px] bg-white rounded-[6px] text-blue-700 font-display font-extrabold  shadow-lg shadow-white-500/50 border-[2px] border-blue-700">supprime</button>
+						<button id="btnouvrir" class="h-[40px] w-[120px] bg-blue-700 rounded-[6px] text-white font-display font-extrabold  shadow-lg shadow-blue-500/50"> ouvrir </button>
 					</div>
 				</div>
 			</div>
