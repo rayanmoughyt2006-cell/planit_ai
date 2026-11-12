@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html land="fr">
 	<head>
-		<meta charset="UTF-">
+		<meta charset="UTF-8">
 		<meta name="veiwport" content="width=device-width, intial-scale=1.0">
 		<script src="https://cdn.tailwindcss.com"></script>
-		<script type="module"  src="main.js" defer></script>
+		<link rel="stylesheet" href="style.css">
+		<title> Planit AI </title>
+		<script type="module"  src="./js/main.js" defer></script>	
 	</head>
-	<body class="bg-cyan-200">
+	<body>
 		<header>
-			<nav id="navbar" class="h-[15vh] flex justify-between items-center bg-cyan-300">
-				<a href="index.html"><img src="./img/logo.png" alt="logo de palnit ai" class="h-[70px] p-[5px]"></a>
-				<ul id="ul-nav" class="flex items-center text-blue-700 gap-[20px] p-[20px] font-display font-extrabold text-2xl">
-					<li><a href="index.html"> Accueil </a></li>
-					<li><a href="new-project.html"> Nouveau Projet </a></li>
-					<li><a href="#" class="text-xl bg-blue-500 text-white p-[15px] rounded-[6px]"> Paramètres IA </a></li>
+			<nav id="navbar" class="h-[17vh] flex justify-between items-center bg-cyan-300">
+				<a href="index.html"><img src="./img/logo.png" alt="logo de palnit ai" class="h-[70px] p-[7px] translate-x-[6%]"></a>
+				<ul id="ul-nav" class="flex items-center text-blue-700 gap-[30px] p-[20px] font-display font-extrabold text-2xl">
+					<li><a href="index.html"> Dashboard     </a></li>
+					<li><a href="new-project.html">  + Nouveau Projet </a></li>
+					<li><button id="openAI" class="text-xl bg-blue-700 text-white p-[15px] rounded-[6px]"> Paramètres IA </button></li>
 				</ul>
 			</nav>
 		</header>
-		
+		<main class="h-[85vh]">
+			<div id="introduction" class="flex justify-between items-center translate-y-[50%] p-[30px]">
+				<div class="">
+					<h1 class="font-display font-extrabold text-3xl">Mes Projets</h1>
+					<p>Suivez L'avancement de Vos Plans de Developpement</p>
+				</div>
+				<a href=""><button class="bg-blue-700 shadow-lg shadow-blue-500/50 text-white h-[60px] w-[200px] rounded-[5px] font-extrabold font-display"> + Nouveuo Projet</button></a>
+			</div>
+			<div class="grid grid-cols-[1fr_1fr_1fr] place-items-center translate-y-[15%] gap-[30px] mx-[40px] ">
+				<div class="h-[350px] w-[400px] border-[2px] rounded-[6px] border-blue-500 bg-red-700">
+					<div class="flex place-items-start">
+						test
+					</div>
+					<div>test</div>
+					<div class=" flex justify-between place-items-end">
+						<button id="btndelet" class="	">supprime</button>
+						<button id="btnouvrir" class="bg-blue-700 border-[2px] shadow-lg shadow-blue-500/50"> ouvrir </button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<dialog id="popup">
+				<p class="text-2xl translate-y-[-40%]"> Votre API Key </p>
+				<input type="password" name="AI.url" id="inp-api" placeholder="  API key" class="border-blue-700 border-[2px] rounded-[6px] h-[40px] focus:outline-none">
+				<button type="submit" id="closeAI" class="bg-blue-500 h-[50px] w-[150px] translate-y-[40%] text-white rounded-[8px]">submit</button>
+			</dialog>
+			
 	</body>
 </html
