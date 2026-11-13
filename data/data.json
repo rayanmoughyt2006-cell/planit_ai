@@ -1,0 +1,203 @@
+{
+  "projectName": "E-Commerce Website",
+  "totalEstimatedHours": 45,
+  "tasks": [
+    {
+      "id": "task-01",
+      "title": "Project Setup and Repository",
+      "description": "Create the project structure, configure the development environment, and prepare the Git repository.",
+      "userStories": [
+        "As a developer, I want a ready project structure so that development can start consistently."
+      ],
+      "acceptanceCriteria": [
+        "The project repository is initialized.",
+        "The required folders and starter files are present.",
+        "The project runs locally."
+      ],
+      "priority": "High",
+      "importance": "High",
+      "size": "S",
+      "estimatedTime": 4,
+      "deadline": "2026-11-15",
+      "status": "To Do",
+      "dependencies": []
+    },
+    {
+      "id": "task-02",
+      "title": "Design Database and Data Models",
+      "description": "Define the main entities and relationships needed for products, customers, and orders.",
+      "userStories": [
+        "As a developer, I want clear data models so that application data is structured consistently."
+      ],
+      "acceptanceCriteria": [
+        "Product, customer, and order entities are defined.",
+        "Relationships between entities are documented.",
+        "Required fields and validation rules are identified."
+      ],
+      "priority": "High",
+      "importance": "High",
+      "size": "M",
+      "estimatedTime": 6,
+      "deadline": "2026-11-17",
+      "status": "To Do",
+      "dependencies": [
+        "task-01"
+      ]
+    },
+    {
+      "id": "task-03",
+      "title": "Build Responsive Homepage",
+      "description": "Create the storefront homepage with navigation, featured products, and responsive layout.",
+      "userStories": [
+        "As a visitor, I want to browse a clear homepage so that I can discover products easily."
+      ],
+      "acceptanceCriteria": [
+        "The homepage contains the main navigation and featured section.",
+        "The layout works on mobile, tablet, and desktop.",
+        "Images have appropriate alternative text."
+      ],
+      "priority": "High",
+      "importance": "High",
+      "size": "M",
+      "estimatedTime": 5,
+      "deadline": "2026-11-19",
+      "status": "To Do",
+      "dependencies": [
+        "task-01"
+      ]
+    },
+    {
+      "id": "task-04",
+      "title": "Create Product Listing and Filters",
+      "description": "Display products in a catalog and allow visitors to filter and sort the results.",
+      "userStories": [
+        "As a shopper, I want to browse and filter products so that I can find relevant items."
+      ],
+      "acceptanceCriteria": [
+        "Products are displayed with key information.",
+        "Category filtering works.",
+        "Sorting updates the displayed product order."
+      ],
+      "priority": "High",
+      "importance": "High",
+      "size": "L",
+      "estimatedTime": 8,
+      "deadline": "2026-11-21",
+      "status": "To Do",
+      "dependencies": [
+        "task-02",
+        "task-03"
+      ]
+    },
+    {
+      "id": "task-05",
+      "title": "Build Product Details Page",
+      "description": "Create a product details view with images, description, price, and availability.",
+      "userStories": [
+        "As a shopper, I want to inspect a product so that I can decide whether to buy it."
+      ],
+      "acceptanceCriteria": [
+        "The page shows product images, description, and price.",
+        "The selected product is identified correctly.",
+        "The page is responsive."
+      ],
+      "priority": "Medium",
+      "importance": "Medium",
+      "size": "S",
+      "estimatedTime": 4,
+      "deadline": "2026-11-22",
+      "status": "To Do",
+      "dependencies": [
+        "task-04"
+      ]
+    },
+    {
+      "id": "task-06",
+      "title": "Implement Shopping Cart",
+      "description": "Allow shoppers to add products, change quantities, remove items, and review the cart total.",
+      "userStories": [
+        "As a shopper, I want to manage my cart so that I can review the items I plan to purchase."
+      ],
+      "acceptanceCriteria": [
+        "Products can be added to the cart.",
+        "Quantities can be changed and items removed.",
+        "The cart total updates when the cart changes."
+      ],
+      "priority": "High",
+      "importance": "High",
+      "size": "M",
+      "estimatedTime": 6,
+      "deadline": "2026-11-24",
+      "status": "To Do",
+      "dependencies": [
+        "task-05"
+      ]
+    },
+    {
+      "id": "task-07",
+      "title": "Create Checkout Form and Validation",
+      "description": "Build a checkout form and validate the customer and delivery information before submission.",
+      "userStories": [
+        "As a shopper, I want to enter delivery details so that I can complete my order."
+      ],
+      "acceptanceCriteria": [
+        "Required checkout fields are present.",
+        "Invalid or missing values show clear validation messages.",
+        "A valid form can be submitted in the demo flow."
+      ],
+      "priority": "High",
+      "importance": "High",
+      "size": "M",
+      "estimatedTime": 5,
+      "deadline": "2026-11-26",
+      "status": "To Do",
+      "dependencies": [
+        "task-06"
+      ]
+    },
+    {
+      "id": "task-08",
+      "title": "Add Order Confirmation",
+      "description": "Show a confirmation screen after a successful simulated checkout.",
+      "userStories": [
+        "As a shopper, I want confirmation after checkout so that I know my order was received."
+      ],
+      "acceptanceCriteria": [
+        "A confirmation message is displayed after valid checkout.",
+        "The confirmation includes a generated order reference.",
+        "The cart is cleared after successful demo checkout."
+      ],
+      "priority": "Medium",
+      "importance": "Medium",
+      "size": "S",
+      "estimatedTime": 3,
+      "deadline": "2026-11-27",
+      "status": "To Do",
+      "dependencies": [
+        "task-07"
+      ]
+    },
+    {
+      "id": "task-09",
+      "title": "Responsive and Functional Testing",
+      "description": "Test the main shopping flow, fix issues, and verify responsive behavior across screen sizes.",
+      "userStories": [
+        "As a project stakeholder, I want the main user flow tested so that the demo is reliable."
+      ],
+      "acceptanceCriteria": [
+        "The homepage, catalog, product page, cart, and checkout are tested.",
+        "The main flow works at mobile and desktop widths.",
+        "Critical defects found during testing are fixed."
+      ],
+      "priority": "Medium",
+      "importance": "High",
+      "size": "S",
+      "estimatedTime": 4,
+      "deadline": "2026-11-27",
+      "status": "To Do",
+      "dependencies": [
+        "task-08"
+      ]
+    }
+  ]
+}
