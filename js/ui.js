@@ -1,14 +1,9 @@
-import { getdata } from "./data"
+import { getdata } from "./data.js"
 
 let data = getdata();
 let count = 0 ;
 const p = document.querySelectorAll("dachdescription")
 
-export function dashbord(){
-    p = data[count].description;
-    p.t
-    count++;
-}
 
 export function popup(){
     const box = document.getElementById("popup")

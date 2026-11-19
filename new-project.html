@@ -30,11 +30,11 @@
                         <p class="text-xl"> Decrivez Votre projet pour generet un plan de Developpementrealiste .</p>
                     </div>
                 </div>
-                    <form action="" class="flex flex-col gap-[25px] p-[50px] rounded-[4px]" data-parsley-validate>
+                    <form id="formel" action="" class="flex flex-col gap-[25px] p-[50px] rounded-[4px]" data-parsley-validate>
 
                         <div class="flex justify-between">
                             <div class="flex flex-col gap-[10px]">
-                                <label for="nomprojet" class="font-extrabold font-display"> Nom du projet </label>
+                                <label for="nomprojet" class="font-extrabold font-display" > Nom du projet </label>
                                 <input type="text" name="nom de projet" id="nomprojet" placeholder="Ex.Application de reservation" class="border-[2px] border-blue-700   h-[40px] w-[250px] rounded-[4px]" required >
                             </div>
                             <div class="flex flex-col gap-[10px]">
@@ -49,16 +49,31 @@
                         </div> 
                         <div class="flex flex-col">
                             <label for="textbreif" class="font-extrabold font-display">Breif complet</label>
-                            <textarea name="breif" id="textbreif"  class="peer invalid:border-red-500 invalid:bg-red-100 w-full h-[140px] rounded-[4px] border-[2px] border-blue-700 " required data-parsley-required-message="champ is required."></textarea>
+                            <textarea name="breif" id="textbreif"  class="w-full h-[140px] rounded-[4px] border-[2px] border-blue-700 " required data-parsley-required-message="champ is required."></textarea>
                         </div>
+
                         <div class="flex justify-between">
-                            <select name="select" id="select" class="h-[60px] w-[350px] rounded-[6px] bg-white border-[2px] border-blue-700 shadow-lg shadow-blue-700/50 font-extrabold font-display">
-                                <option value=""> Nomber de développeur </option>
+                            <div class="flex flex-row">
+                                <select name="select" id="niveauselect" class="h-[60px] w-[350px] rounded-[6px] bg-white border-[2px] border-blue-700 shadow-lg shadow-blue-700/50 font-extrabold font-display">
+                                <option value=""disabled selected> Niveau de difficulté  </option>
+                                <option value="1"> Beginner </option>
+                                <option value="2"> Intermediate </option>
+                                <option value="3"> Advanced </option>
+                            </select>
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="inpttechno" class="font-extrabold font-display">Technologies</label>
+                                <input type="text" id="inpttechno" class="w-full h-[50px] border-[2px] border-blue-700 rounded-[4px]">
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <select name="select" id="selectnumber" class="h-[60px] w-[350px] rounded-[6px] bg-white border-[2px] border-blue-700 shadow-lg shadow-blue-700/50 font-extrabold font-display">
+                                <option value=""disabled selected> Nomber de développeur </option>
                                 <option value="1"> 1 développeur</option>
                                 <option value="2"> 2 développeur</option>
                                 <option value="3"> 3 développeur</option>
-                                <option value="4"> 4 développeur</option>
-                                <option value="5"> 5 développeur</option>
+                                <option value="+3"> Plusieurs développeurs </option>
                             </select>
                             <button  type="submit" id="devet" class="bg-blue-700 shadow-lg shadow-blue-700/50 h-[60px] w-[140px] text-white rounded-[6px] font-extrabold font-display"> Devet projet</button>
                         </div>
