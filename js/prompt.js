@@ -3,7 +3,7 @@ export function build(projet){
 Your mission is to analyze the project brief below and transform it into a detailed, realistic and well-organized development plan.
 PROJECT INFORMATION:
 Project Name: ${projet.NAME}
-Project Duration: ${projet.NUMBDAYS} days
+Project Duration: ${projet.NUMDAYS} days
 Team Size: ${projet.NUMDEVELOPERS} developer(s)
 Technologies: ${projet.TECHNOLOGIES}
 Difficulty Level: ${projet.DIFFICULTYLEVEL}
